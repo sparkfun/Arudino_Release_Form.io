@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<div class="container">
+
+    <body>
+        <h1>Create a New Release</h1>
+        <h3><i>for Arduino Library Manager</i></h3>
+
+        <div class="form-container">
+            <aside><i>* Required</i></aside><br>
+            <form>
+                <label for="name">* Name: </label><br>
+                <input name="name" id="name" type="text">
+            </form><br>
+
+            <form>
+                <label for="email">* GitHub E-mail: </label><br>
+                <input name="email" id="email" type="text">
+            </form><br>
+
+            <form>
+                <label for="password">* GitHub Password:</label><br>
+                <input name="password" id="password" type="password">
+                <input type="checkbox" id="passwordCheckBox">
+                <b>Show Password</b>
+            </form><br>
+
+            <form>
+                <label for="twoFactor">2 Factor Authentication:</label><br>
+                <input name="twoFactor" id="twoFactor" type="text" disabled=true>
+                <input type="checkbox" id="twoFactorCheckBox">
+                <b>Use 2 Factor Authentication</b>
+            </form><br>
+
+            <form>
+                <label for="libraryURL">* GitHub Library URL:</label><br>
+                <input name="libraryURL" id="libraryURL" type="text">
+            </form><br>
+
+            <form>
+                <label for="releaseDescription">* Release Description:</label><br>
+                <textarea name="releaseDescription" id="releaseDescription" rows="7" cols="52"></textarea>
+            </form><br>
+
+
+            <form id="releaseTypeForm">
+                <label for="releaseType">* Release Type:</label><br>
+                <input name="releaseType" id="majorCheckBox" value="major" type="radio">
+                <b>Major:</b> made incompatible API changes <br>
+                <input name="releaseType" id="minorCheckBox" value="minor" type="radio">
+                <b>Minor:</b> added backwards-compatible functionality <br>
+                <input name="releaseType" id="patchCheckBox" value="patch" type="radio">
+                <b>Patch:</b> made backwards-compatible bug fixes
+            </form><br>
+        </div>
+
+        <div class="button-container">
+            <button id="get" type="button">Create Release</button><br>
+        </div>
+
+        <div class="msg-container">
+            <p id=errorMsg>
+            </p>
+            <p id=successMsg>
+            </p>
+        </div>
+    </body>
+    <div class="container">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+</html>

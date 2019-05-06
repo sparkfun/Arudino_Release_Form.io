@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  margin: 3em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+}
+
+form, aside {
+  width: 440px;
+  margin: 0 auto;
+}
+
+h1, h3 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-container {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.button-container {
+  width: 440px;
+  margin: 0 auto;
+}
+
+.msg-container {
+  margin: 0 auto;
+  margin-top: 2.5em;
+  border-radius: 15px;
+  background-color: white;
+  padding: 1em;
+  width: 440px;
+}
+
+#errorMsg, #successMsg {
+  margin: 0 auto;
+  color: white;
+}
