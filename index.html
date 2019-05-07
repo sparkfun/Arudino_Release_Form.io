@@ -14,12 +14,7 @@
         <h3><i>for Arduino Library Manager</i></h3>
 
         <div class="form-container">
-            <aside><i>* Required</i></aside><br>
-            <form>
-                <label for="name">* Name: </label><br>
-                <input name="name" id="name" type="text">
-            </form><br>
-
+            <h4>GitHub Login:</h4>
             <form>
                 <label for="email">* GitHub E-mail: </label><br>
                 <input name="email" id="email" type="text">
@@ -37,6 +32,12 @@
                 <input name="twoFactor" id="twoFactor" type="text" disabled=true>
                 <input type="checkbox" id="twoFactorCheckBox">
                 <b>Use 2 Factor Authentication</b>
+            </form><br>
+
+            <h4>Release Information:</h4>
+            <form>
+                <label for="name">* Your Name: </label><br>
+                <input name="name" id="name" type="text">
             </form><br>
 
             <form>
@@ -59,6 +60,8 @@
                 <input name="releaseType" id="patchCheckBox" value="patch" type="radio">
                 <b>Patch:</b> made backwards-compatible bug fixes
             </form><br>
+
+            <aside><i>* Required</i></aside><br>
         </div>
 
         <div class="button-container">

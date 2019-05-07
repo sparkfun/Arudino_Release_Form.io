@@ -10,10 +10,15 @@ body {
   font-size: 0.9em;
 }
 
-form, aside {
+form, aside, h4 {
   width: 440px;
   margin: 0 auto;
 }
+
+h4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+} 
 
 h1, h3 {
   text-align: center;

@@ -258,7 +258,7 @@ $('#get').click(function () {
                     error: function (jqXHR, textStatus, errorThrown) {
                       $('.msg-container').css({ "background-color": "#F21905" });
                       $('#successMsg').html("");
-                      $('#errorMsg').html("Unable to authenticate. Please check that the e-mail, password, and 2 factor authentication fields are correctly populated. If you are using 2 Factor Authentication, please make sure that you are using a current one time password.");
+                      $('#errorMsg').html("Unable to authenticate. Please check that the e-mail, password, and 2 factor authentication fields are correctly populated. If you have 2 Factor Authentication enabled on GitHub, please make sure you fill in the field with your temporary code (i.e. a one time password). You can obtain this with the Google Authenticator app or by re-logging into GitHub.");
                     }
                   });
 
@@ -289,7 +289,7 @@ $('#get').click(function () {
       error: function (jqXHR, textStatus, errorThrown) {
         $('.msg-container').css({ "background-color": "#F21905" });
         $('#successMsg').html("");
-        $('#errorMsg').html("No library.properties file. Please first create a library.properties file and check that you included the complete file path in the form. If this is the first release for this library, please create the first release yourself. Don't forget to create an issue on the Arduino GitHub to ensure it's included in the Arduino Library Manager.");
+        $('#errorMsg').html("No library.properties file. Please first create a library.properties file and check that you used the complete file path to the library. If this is the first release for this library, please create the first release yourself. Don't forget to create an issue on the Arduino GitHub to ensure it's included in the Arduino Library Manager.");
       }
     });
 
@@ -297,7 +297,6 @@ $('#get').click(function () {
   } else {
     $('.msg-container').css({ "background-color": "#F21905" });
     $('#successMsg').html("");
-    $('#errorMsg').html("Please fill in all required fields.")
+    $('#errorMsg').html("Please fill in all required fields. If you have 2 factor authentication enabled on GitHub, please fill in that field as well with your temporary code (i.e. a one time password). You can obtain this with the Google Authenticator app or by re-logging into GitHub. ")
   }
-
 });
